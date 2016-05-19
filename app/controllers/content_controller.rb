@@ -9,7 +9,7 @@ class ContentController < ApplicationController
     redirect_to root_path, :notice => "Access denied." unless current_user.gold?
   end
 
-  def platinum
+  def bronze
     redirect_to root_path, :notice => "Access denied." unless current_user.platinum?
   end
 
